@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',  # for create api end point
     'doctors'
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # must => to prevent error
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -135,3 +137,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # For auth to override the default user fro Django
 AUTH_USER_MODEL = 'doctors.Doctors'
+
+# CORS
+# to ALLOW ALL frontEnd ports to access
+CORS_ORIGIN_ALLOW_ALL = True
+# to allowed to frontend to access cookies
+CORS_ALLOW_CREDENTIALS = True

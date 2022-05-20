@@ -1,4 +1,4 @@
-<h1 align="center"> Crowd Funding Web App </h1>
+<h1 align="center"> Django API Authentication </h1>
 
 ## Description :  
 Django API Authentication Using JWT Tokens and Rest Framework

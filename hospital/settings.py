@@ -76,18 +76,18 @@ WSGI_APPLICATION = 'hospital.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
     # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'hospital',
-    #     'USER': 'root',
-    #     'PASSWORD': '',
-    #     'HOST': '127.0.0.1',
-    #     'PORT': '3306',
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hospital',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
 }
 
 
@@ -131,3 +131,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# For auth to override the default user fro Django
+AUTH_USER_MODEL = 'doctors.Doctors'

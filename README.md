@@ -54,11 +54,3 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  `To help you understand the project databases, see the following ERF`
-<h3 align="center"> DataBase ERD </h3>
-<p align="center">
-   <img src="">
-</p>
-
-

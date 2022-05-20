@@ -372,3 +372,6 @@ media
 # Support for Project snippet scope
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,django,visualstudiocode
+
+# sqlite
+db.sqlite3
